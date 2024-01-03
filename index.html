@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Imagens/fone-removebg-preview.png" alt="Imagem do telefone"/>
+            <h1> Agenda Telefônica</h1>
+        </header>
+        <form id="formTelefonica">
+            <input type="text" id="nomeContato" placeholder="Nome de Contato" required>
+            <input type="tel" id="telContato" placeholder="(xx) xxxxx-xxxx" required maxlength="15" oninput="mascaraPhone(event)"/>
+            <button type="submit"> Contato + </button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <tr>
+                        <th>Nome do Contato</th>
+                        <th>Número do Contato</th>
+                    </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Nome
+                    </td>
+                    <td>
+                        (xx) xxxxx-xxxx
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Sua Lista de Contatos</td>
+                    <td>Sua lista de Números</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
